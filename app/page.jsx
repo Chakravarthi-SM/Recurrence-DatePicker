@@ -221,7 +221,7 @@ const MiniCalendar = ({ recurringDates, currentDate }) => {
             onClick={() => navigateMonth(-1)}
             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
           >
-            <ChevronLeft className="w-4 h-4" />
+            <ChevronLeft className="w-4 h-4 cursor-pointer" />
           </button>
           <span className="text-sm font-medium text-gray-600 min-w-[120px] text-center">
             {viewDate.toLocaleDateString("en-US", {
@@ -233,7 +233,7 @@ const MiniCalendar = ({ recurringDates, currentDate }) => {
             onClick={() => navigateMonth(1)}
             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
           >
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRight className="w-4 h-4 cursor-pointer" />
           </button>
         </div>
       </div>
@@ -707,11 +707,11 @@ const RecurringDatePicker = () => {
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-gray-800 mb-2 flex items-center justify-center gap-3">
-              <Repeat className="w-8 h-8 text-blue-600" />
+              {/* <Repeat className="w-8 h-8 text-blue-600" /> */}
               Recurring Date Picker
             </h1>
             <p className="text-gray-600 text-lg">
-              Create sophisticated recurring date patterns with ease
+              Customize daily, weekly, or monthly plans in seconds.
             </p>
           </div>
 
@@ -803,7 +803,7 @@ const RecurringDatePicker = () => {
           </div>
 
           {/* Advanced Features Demo */}
-          {recurringDates.length > 0 && (
+          {/* {recurringDates.length > 0 && (
             <div className="mt-8 bg-white rounded-xl shadow-lg p-6 border border-gray-100">
               <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
                 <Play className="w-5 h-5 text-green-600" />
@@ -880,7 +880,7 @@ const RecurringDatePicker = () => {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Error Handling and Validation */}
           {config.startDate &&
